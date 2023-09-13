@@ -55,16 +55,16 @@ app.use(
 );
 
 // seed db
-// seedDB();
+seedDB();
 
 // Set middleware to manage sessions
-app.use(
-  session({
-    secret: process.env.SESSION_SECRET,
-    resave: true,
-    saveUninitialized: true,
-  })
-);
+// app.use(
+//   session({
+//     secret: process.env.SESSION_SECRET,
+//     resave: true,
+//     saveUninitialized: true,
+//   })
+// );
 
 // Parse cookies used for session management
 app.use(cookieParser(process.env.SESSION_SECRET));
