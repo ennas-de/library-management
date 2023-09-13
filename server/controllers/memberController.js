@@ -1,4 +1,4 @@
-const Member = require('../models/member')
+const Member = require("../models/member.js");
 
 const getMember = async (req, res) => {
     const memberId = req.params.id;
