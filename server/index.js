@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const logger = require("morgan");
 const passport = require("passport");
-const session = require("express-session");
+// const session = require("express-session");
 const cookieParser = require("cookie-parser");
 
 // Import routers
