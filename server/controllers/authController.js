@@ -70,7 +70,7 @@ const seedDB = () => {
   const details = {
     name: "Abdulhakeem Muhammed",
     // email: "dev.abdulhakeem@gmail.com",
-    // password: "admin123",
+    password: "admin123",
     isAdmin: true,
     photoUrl: "not needed",
   };
