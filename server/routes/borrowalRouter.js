@@ -9,7 +9,7 @@ const {
   addBorrowal,
   updateBorrowal,
   deleteBorrowal,
-} = require("../controllers/BorrowalController.js");
+} = require("../controllers/borrowalController.js");
 
 router.get("/getAll", (req, res) => getAllBorrowals(req, res));
 
