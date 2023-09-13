@@ -36,10 +36,7 @@ app.use(express.urlencoded({ extended: false }));
 // Connect to DB
 const mongoose = require("mongoose");
 mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("Connected to DB on MongoDB Atlas");
   })
