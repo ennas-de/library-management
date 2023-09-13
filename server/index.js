@@ -7,16 +7,16 @@ const session = require("express-session");
 const cookieParser = require("cookie-parser");
 
 // Import routers
-const authRouter = require("./routes/authRouter");
-const bookRouter = require("./routes/bookRouter");
-const authorRouter = require("./routes/authorRouter");
-const borrowalRouter = require("./routes/borrowalRouter");
-const genreRouter = require("./routes/genreRouter");
-const userRouter = require("./routes/userRouter");
-const reviewRouter = require("./routes/reviewRouter");
+const authRouter = require("./routes/authRouter.js");
+const bookRouter = require("./routes/bookRouter.js");
+const authorRouter = require("./routes/authorRouter.js");
+const borrowalRouter = require("./routes/borrowalRouter.js");
+const genreRouter = require("./routes/genreRouter.js");
+const userRouter = require("./routes/userRouter.js");
+const reviewRouter = require("./routes/reviewRouter.js");
 
 // Import seedDB
-const { seedDB } = require("./controllers/authController");
+const { seedDB } = require("./controllers/authController.js");
 
 // Configure dotenv for environment variables in production
 if (process.env.NODE_ENV !== "production") {
@@ -76,7 +76,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Initialise passport as authentication middleware
-const initializePassport = require("./passport-config");
+const initializePassport = require("./passport-config.js");
 initializePassport(passport);
 
 // Implement routes for REST API
