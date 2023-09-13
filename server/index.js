@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const logger = require("morgan");
 const passport = require("passport");
-// const session = require("express-session");
+const session = require("express-session");
 const cookieParser = require("cookie-parser");
 
 // Import routers
@@ -57,13 +57,13 @@ app.use(cors());
 // seedDB();
 
 // Set middleware to manage sessions
-// app.use(
-//   session({
-//     secret: process.env.SESSION_SECRET,
-//     resave: true,
-//     saveUninitialized: true,
-//   })
-// );
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET,
+    resave: true,
+    saveUninitialized: true,
+  })
+);
 
 // Parse cookies used for session management
 app.use(cookieParser(process.env.SESSION_SECRET));
