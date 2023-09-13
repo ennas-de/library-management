@@ -71,7 +71,7 @@ const seedDB = () => {
     name: "Abdulhakeem Muhammed",
     // email: "dev.abdulhakeem@gmail.com",
     // password: "admin123",
-    // isAdmin: true,
+    isAdmin: true,
     photoUrl: "not needed",
   };
 
