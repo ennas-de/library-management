@@ -48,7 +48,8 @@ mongoose
 // Use CORS for Cross Origin Resource Sharing
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://l-mat.netlify.app", // production
+    origin: "http://localhost:3000", // dev
     credentials: true,
   })
 );
