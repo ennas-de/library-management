@@ -92,7 +92,7 @@ You need a computing environment with an up to date version of Windows/Mac OS/Li
 - Clone the code repo using **HTTPS**, SSH or Github CLI
 
 ```
-git clone https://github.com/MERNRAD/LibraryManagement.git
+git clone https://github.com/ennas-de/library-management.git
 ```
 
 ### 🚀 Installing and executing (dev)
