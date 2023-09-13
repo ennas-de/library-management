@@ -35,6 +35,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Connect to DB
 const mongoose = require("mongoose");
+
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
@@ -43,14 +44,14 @@ mongoose
   .catch((err) => console.log("DB connection error", err));
 
 // Use CORS for Cross Origin Resource Sharing
-// app.use(cors());
-app.use(
-  cors({
-    origin: "https://l-mat.netlify.app", // production
-    origin: "http://localhost:3000", // dev
-    credentials: true,
-  })
-);
+app.use(cors());
+// app.use(
+//   cors({
+//     origin: "https://l-mat.netlify.app", // production
+//     origin: "http://localhost:3000", // dev
+//     credentials: true,
+//   })
+// );
 
 // seed db
 // seedDB();
