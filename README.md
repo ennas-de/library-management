@@ -219,7 +219,7 @@ Contact authors if you need help or run into any issues
 
 - 1.1
   - Various bug fixes and optimizations
-  - See [dev branch commit history](https://github.com/MERNRAD/LibraryManagement/commits/dev)
+  - See [dev branch commit history](https://github.com/ennas-de/library-management/commits/dev)
 - 1.0
   - Initial Release
 
