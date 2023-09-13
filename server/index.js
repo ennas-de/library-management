@@ -55,7 +55,7 @@ app.use(
 );
 
 // seed db
-seedDB();
+// seedDB();
 
 // Set middleware to manage sessions
 // app.use(
